@@ -16,7 +16,6 @@ def topic(data, tags, msg):
     nick, host = usermask.split("!", 1)
 
     buffer = weechat.buffer_search("irc", server + "." + channel)
-    weechat.prnt("", server + "." + channel)
 
     if not buffer:
         return weechat.WEECHAT_RC_ERROR
